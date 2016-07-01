@@ -1,2 +1,1 @@
-# C-Sharp
-C# lessons.
+# C# lessons
