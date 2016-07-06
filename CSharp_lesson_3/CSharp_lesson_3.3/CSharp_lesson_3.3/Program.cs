@@ -26,9 +26,9 @@ namespace CSharp_lesson_3._3
             rf.Close();
 
             // add corrections
-            string content_correction1 = content.Replace("bullshit", "b*llsh*t");
-            string content_correction2 = content.Replace("fuck", "f*ck");
-            string content_correction3 = content.Replace("damn", "d*mn");
+            content = content.Replace("bullshit", "b*llsh*t");
+            content = content.Replace("fuck", "f*ck");
+            content = content.Replace("damn", "d*mn");
 
             // path to data file
             const string PATH_TO_OUTPUT_FILE = @"..\..\Data\output.txt";
@@ -39,9 +39,7 @@ namespace CSharp_lesson_3._3
             StreamWriter sw = new StreamWriter(wf);
 
             // write to file
-            sw.Write(content_correction1);
-            sw.Write(content_correction2);
-            sw.Write(content_correction3);
+            sw.Write(content);
 
             // close file
             sw.Close();
