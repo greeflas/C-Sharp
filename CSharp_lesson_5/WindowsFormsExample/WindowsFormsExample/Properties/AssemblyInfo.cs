@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("C# lesson 5")]
-[assembly: AssemblyDescription("C# lessons")]
+[assembly: AssemblyTitle("WindowsFormsExample")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Greeflas-soft")]
-[assembly: AssemblyProduct("C# lesson 5")]
-[assembly: AssemblyCopyright("Greeflas © 2016")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("WindowsFormsExample")]
+[assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("74d59799-cbd1-433e-bb71-373586c6b3ae")]
+[assembly: Guid("bebe5fce-ad6a-4841-8110-ac7d1460fd91")]
 
 // Version information for an assembly consists of the following four values:
 //
