@@ -34,7 +34,7 @@ namespace CSharp_lesson_1
 
         public bool AllowContinue()
         {
-            Console.WriteLine("> Continie? (y/n) - ");
+            Console.Write("\n> Continie? (y/n) - ");
             ans = Console.ReadLine();
 
             return (ans == "y");
@@ -42,10 +42,9 @@ namespace CSharp_lesson_1
 
         public void DisplayMenu()
         {
+            Console.WriteLine("<0> - exit");
             Console.WriteLine("<1> - solve the equation");
-            Console.WriteLine("<2> - solve the new equation");
-            Console.WriteLine("<3> - exit");
-            Console.WriteLine("> Your choise? - ");
+            Console.Write("> Your choise? - ");
             try
             {
                 choise = Convert.ToInt32(Console.ReadLine());
@@ -53,7 +52,7 @@ namespace CSharp_lesson_1
             catch(Exception err)
             {
                 Console.ForegroundColor = ConsoleColor.DarkRed;
-                Console.WriteLine("> Mudak youpt! : {0}", err.Message);
+                Console.WriteLine("> Error: {0}", err.Message);
                 Console.ForegroundColor = ConsoleColor.Gray;
             }
         }

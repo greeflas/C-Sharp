@@ -18,14 +18,18 @@ namespace CSharp_lesson_1
                 dm.DisplayMenu();
                 switch(dm.Choise)
                 {
+                    case 0:
+                        goto finish;
+                        break;
                     case 1:
-                        break;
-                    case 2:
-                        break;
-                    case 3:
+                        CalcManager cl = new CalcManager();
+                        cl.inputData();
+                        cl.CalcResult();
                         break;
                 }
             } while(dm.AllowContinue());
+
+            finish:
             dm.Finish();
         }
     }
