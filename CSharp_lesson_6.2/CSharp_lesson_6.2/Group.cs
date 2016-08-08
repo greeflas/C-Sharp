@@ -31,7 +31,7 @@ namespace CSharp_lesson_6._2
             {
                 int size = students.Length + 1;
                 Array.Resize(ref students, size);
-                students[size] = s;
+                students[size - 1] = s;
             }
         }
 
