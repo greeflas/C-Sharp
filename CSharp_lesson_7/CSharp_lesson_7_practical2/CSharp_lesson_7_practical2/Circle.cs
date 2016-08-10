@@ -16,12 +16,12 @@ namespace CSharp_lesson_7_practical2
 
         public override double CalcP()
         {
-            return;
+            throw new System.NotImplementedException();
         }
 
         public override double CalcS()
         {
-            return;
+            throw new System.NotImplementedException();
         }
     }
 }
