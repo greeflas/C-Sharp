@@ -16,12 +16,15 @@ namespace CSharp_lesson_7_practical2
 
         public override double CalcP()
         {
-            throw new System.NotImplementedException();
+            return 2 * Math.PI * r;
         }
 
         public override double CalcS()
         {
-            throw new System.NotImplementedException();
+            double d = 2 * r;
+            double s = (Math.PI / 4) * (d * d);
+
+            return s;
         }
     }
 }
