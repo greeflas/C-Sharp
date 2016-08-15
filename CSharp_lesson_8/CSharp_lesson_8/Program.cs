@@ -15,6 +15,12 @@ namespace CSharp_lesson_8
             l.Power = 2500;
             l.Capacity = 200;
             Console.WriteLine(l.ToString());
+
+            ICar c = new Lorry("Kamaz", 4, 1000, 300);
+            Console.WriteLine(c.ToString());
+
+            c.Mark = "Mercedez";
+            Console.WriteLine(c.ToString());
         }
     }
 }
