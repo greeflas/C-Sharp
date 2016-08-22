@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Reflection;
 
 namespace CSharp_lesson_10._1
 {
@@ -54,6 +55,7 @@ namespace CSharp_lesson_10._1
 
         public void Handler()
         {
+            Console.WriteLine("[method info]: {0}\n", MethodBase.GetCurrentMethod().ToString());
             Console.WriteLine(ToString());
         }
     }
