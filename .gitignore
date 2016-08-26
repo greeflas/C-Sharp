@@ -2,6 +2,8 @@
 *.sln
 *.csproj
 *.db
+*.suo
+*.csproj.user
 
 # VS dirictories
 .vs/

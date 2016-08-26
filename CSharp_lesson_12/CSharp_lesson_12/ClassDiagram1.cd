@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CSharp_lesson_12.Person">
+    <Position X="3.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAABAAEBAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSharp_lesson_12.ListPerson">
+    <Position X="5.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQUAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAABAAAAA=</HashCode>
+      <FileName>ListPerson.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="CSharp_lesson_12.Zodiac">
+    <Position X="2" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAACAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Zodiac.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
