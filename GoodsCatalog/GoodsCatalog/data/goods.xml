@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<goods>
+  <product id="1" title="iPhone CE" category="Phones" price="15000" quantity="100" />
+  <product id="2" title="iPhone 6s" category="Phones" price="19099" quantity="245" />
+  <product id="3" title="iPad Pro" category="Tablets" price="20000" quantity="40" />
+  <product id="4" title="iPad mini 3" category="Tablets" price="17000" quantity="550" />
+</goods>
