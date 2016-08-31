@@ -1,18 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<students> 
-  <student id="1"
-           lname="Vasya"
-           fname="Pupkin"
-           age="18"
-           rate="6.5" />
-  <student id="2"
-           lname="Sveta"
-           fname="Pupkina"
-           age="19"
-           rate="10.0" />
-  <student id="3"
-           lname="Tanya"
-           fname="Karenina"
-           age="21"
-           rate="9.9" />
+﻿<?xml version="1.0" encoding="utf-8"?>
+<students>
+  <student id="1" lname="Vasya" fname="Pupkin" age="18" rate="6.5" />
+  <student id="2" lname="Sveta" fname="Pupkina" age="19" rate="10.0" />
+  <student id="3" lname="Tanya" fname="Karenina" age="21" rate="9.9" />
+  <student id="4" fname="testfirstname" lname="testlastname" age="14" rate="12.0" />
 </students>
