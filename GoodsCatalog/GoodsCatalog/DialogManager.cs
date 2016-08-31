@@ -16,6 +16,23 @@ namespace GoodsCatalog
     {
         MenuPoints choise;
 
+        void Actions()
+        {
+            switch(choise)
+            {
+                case MenuPoints.DISPLAY_GOODS:
+                    break;
+                case MenuPoints.SEARCH:
+                    break;
+                case MenuPoints.ADD_PRODUCT:
+                    break;
+                case MenuPoints.REMOVE_PRODUCT:
+                    break;
+                case MenuPoints.EDIT_PRODUCT_INFO:
+                    break;
+            }
+        }
+
         public void Start()
         {
             Console.WriteLine("\tGoods catalog");
@@ -36,6 +53,7 @@ namespace GoodsCatalog
             Console.WriteLine("<{0}> - edit product info",  MenuPoints.EDIT_PRODUCT_INFO);
             try
             {
+                Console.Write("> ");
                 choise = (MenuPoints)Convert.ToInt32(Console.ReadLine());
             }
             catch(Exception error)
@@ -47,6 +65,8 @@ namespace GoodsCatalog
 
             if (choise == MenuPoints.EXIT)
                 return false;
+
+            Actions();
 
             return true;
         }

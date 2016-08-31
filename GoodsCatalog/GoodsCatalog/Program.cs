@@ -7,6 +7,8 @@ namespace GoodsCatalog
     {
         static void Main(string[] args)
         {
+            DialogManager dm = new DialogManager();
+            while (dm.GeneralMenu());
         }
     }
 }
