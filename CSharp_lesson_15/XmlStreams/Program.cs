@@ -39,10 +39,19 @@ namespace XmlStreams
                 // read node attributes
                 if((reader.NodeType == XmlNodeType.Element) && (reader.AttributeCount > 0))
                 {
-                    Console.WriteLine("id: {0}", reader.GetAttribute("id"));
-                    Console.WriteLine("Title: {0}", reader.GetAttribute("title"));
-                    Console.WriteLine("Category: {0}", reader.GetAttribute("category"));
+                    // variant 1
+                    while(reader.MoveToNextAttribute())
+                    {
+                        Console.Write("{0}: ", reader.Name);
+                        Console.WriteLine(reader.Value);
+                    }
                     Console.WriteLine();
+
+                    // variant 2
+                    //Console.WriteLine("id: {0}", reader.GetAttribute("id"));
+                    //Console.WriteLine("Title: {0}", reader.GetAttribute("title"));
+                    //Console.WriteLine("Category: {0}", reader.GetAttribute("category"));
+                    //Console.WriteLine();
                 }
             }
 
