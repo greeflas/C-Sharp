@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<goods>
+  <product id="1" title="iPhone 6s" category="Phones" />
+  <product id="2" title="iPhone 5s" category="Phones" />
+  <product id="3" title="iPhone 4s" category="Phones" />
+</goods>
