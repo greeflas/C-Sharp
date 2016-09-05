@@ -6,11 +6,14 @@ namespace GoodsCatalog
     {
         static void Main(string[] args)
         {
-            const string PATH = "../../data/goods.xml";
+            const string CATALOG_PATH = "../../data/";
+            const string FILE_NAME = "goods.xml";
 
-            Catalog c = new Catalog(PATH);
+            Catalog c = new Catalog(CATALOG_PATH, FILE_NAME);
             c.init();
             c.DisplayCatalog();
+
+            c.Update("update.xml");
         }
     }
 }

@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Xml;
 using System.Collections.Generic;
+using System.Text;
 
 namespace GoodsCatalog
 {
     class Catalog
     {
         // private fields
-        string path;
+        string catalogPath;
+        string fileName;
         List<Goods> catalog;
 
         // public methods
@@ -16,15 +18,16 @@ namespace GoodsCatalog
             catalog = new List<Goods>();
         }
 
-        public Catalog(string path)
+        public Catalog(string catalogPath, string fileName)
         {
             catalog = new List<Goods>();
-            this.path = path;
+            this.catalogPath = catalogPath;
+            this.fileName = fileName;
         }
 
         public void init()
         {
-            XmlTextReader reader = new XmlTextReader(path);
+            XmlTextReader reader = new XmlTextReader(catalogPath + fileName);
             reader.WhitespaceHandling = WhitespaceHandling.All;
 
             while(reader.Read())
@@ -41,6 +44,26 @@ namespace GoodsCatalog
             }
 
             reader.Close();
+        }
+
+        public void Update(string fileName)
+        {
+            XmlTextWriter writer = new XmlTextWriter(catalogPath + fileName, Encoding.UTF8);
+            writer.Formatting = Formatting.Indented;
+
+            writer.WriteStartDocument();
+            writer.WriteStartElement("goods");
+
+            writer.WriteStartElement("product");
+            writer.WriteAttributeString("id", "3");
+            writer.WriteAttributeString("title", "iPad mini");
+            writer.WriteAttributeString("category", "Tablets");
+            writer.WriteEndElement();
+
+            writer.WriteEndElement();
+            writer.WriteEndDocument();
+
+            writer.Close();
         }
 
         public void DisplayCatalog()
