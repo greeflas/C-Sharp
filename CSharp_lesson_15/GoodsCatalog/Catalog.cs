@@ -31,13 +31,9 @@ namespace GoodsCatalog
             {
                 if((reader.NodeType == XmlNodeType.Element) && (reader.AttributeCount > 0))
                 {
-                    int id = 0;
-                    string title = string.Empty;
-                    string category = string.Empty;
-
-                    id = Convert.ToInt32(reader.GetAttribute("id"));
-                    title = reader.GetAttribute("title");
-                    category = reader.GetAttribute("category");
+                    int id = Convert.ToInt32(reader.GetAttribute("id"));
+                    string title = reader.GetAttribute("title");
+                    string category = reader.GetAttribute("category");
 
                     Goods g = new Goods(id, title, category);
                     catalog.Add(g);
